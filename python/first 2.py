@@ -1,0 +1,8 @@
+print("***********************")
+print("  HAPPY NEW YEAR  🎉  ")
+print("***********************")
+print()
+print("A new year begins.")
+print("Not magic.")
+print("Just a chance.")
+print("Use it well.")
