@@ -1,0 +1,18 @@
+print("hello")
+a=1
+b= 12
+print(a+b)
+print("hey! my 'my best friend' ")
+print('hey! my "best friend" \t "vaishnavi"-1-2')
+name=(input("enter name="))
+roll=int (input ("enter roll no-"))
+print("name=",name)
+print("roll=",roll)
+print(type(roll))
+print(type(name))
+print(type(name))
+roll1= (input ("enter roll no-"))
+print("roll1=",roll1)
+print(type(roll1))
+print("hii\t",end="")
+print("vaishnavi")

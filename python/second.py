@@ -1,0 +1,3 @@
+#calculator
+
+print(9)
