@@ -15,7 +15,6 @@ typedef struct Stack
 
 
 
-
 }stack;
 void push(stack *,int );
 int pop(stack*);
