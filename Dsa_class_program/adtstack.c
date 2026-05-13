@@ -7,6 +7,24 @@ typedef struct Stack
 	int top;
 	int a[size];
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }stack;
 
 void push(stack *,int );
