@@ -46,6 +46,7 @@ int main()
         fin.seekg(i);
         fin.get(ch);
         fout2.put(ch);
+        cout<<ch;
     }
 
     fin.close();

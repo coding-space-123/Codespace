@@ -23,7 +23,7 @@ public class opertor {
     public static void main(String[] args) {
         int a=4;
         int x=2;
-        int b= 6+ a;
+        int b= 6 + a;
         int c= 6 % a;  //modulo op.
         System.out.println(b);  // 10
         System.out.println(c);  // 2
@@ -34,7 +34,8 @@ public class opertor {
         System.out.println(2 & 3);
         // 10
         // 11
+        //-----
         // and : 10 = 2
-}
+    }
 }
 

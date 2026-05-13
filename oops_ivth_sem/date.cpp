@@ -1,200 +1,124 @@
-#include <iostream>
+#include<iostream>
+#include<iomanip>
 using namespace std;
 
-class Date {
-private:
-    enum Month { JAN = 1, FEB, MAR, APR, MAY, JUN,
-                 JUL, AUG, SEP, OCT, NOV, DEC };
-
-    int day, year;
-    Month month;
-
-    // Leap year check
-    bool isLeapYear() const {
-        return (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0));
-    }
-
-    // Days in a month
-    int daysInMonth() const {
-        switch (month) {
-            case FEB: return isLeapYear() ? 29 : 28;
-            case APR: case JUN: case SEP: case NOV: return 30;
-            default: return 31;
-        }
-    }
-
-    // Adjust date forward
-    void normalizeForward() {
-        if (day > daysInMonth()) {
-            day = 1;
-            if (month == DEC) {
-                month = JAN;
-                year++;
-            } else {
-                month = Month(month + 1);
-            }
-        }
-    }
-
-    // Adjust date backward
-    void normalizeBackward() {
-        if (day < 1) {
-            if (month == JAN) {
-                month = DEC;
-                year--;
-            } else {
-                month = Month(month - 1);
-            }
-            day = daysInMonth();
-        }
-    }
+class Time {
+    int h, m, s;
 
 public:
-    // Constructor
-    Date() {
-        day = 1;
-        month = JAN;
-        year = 2000;
+    Time() {
+        h = 0; m = 0; s = 0;
     }
 
-    // Input date
-    void getData() {
-        int m;
-        cout << "Enter Day   : ";
-        cin >> day;
-        cout << "Enter Month : ";
-        cin >> m;
-        cout << "Enter Year  : ";
-        cin >> year;
-        month = Month(m);
+    Time(int hh, int mm, int ss) {
+        h = hh; m = mm; s = ss;
     }
 
-    // Default display
-    void display() const {
-        cout << "Date : " << day << "-" << month << "-" << year << endl;
+    void display() {
+        cout << setw(2) << setfill('0') << h << ":"
+             << setw(2) << setfill('0') << m << ":"
+             << setw(2) << setfill('0') << s << endl;
     }
 
-    // Numeric format (DD-MM-YYYY)
-    void display(int) const {
-        cout << "Date (DD-MM-YYYY): ";
-        cout << (day < 10 ? "0" : "") << day << "-"
-             << (month < 10 ? "0" : "") << month
-             << "-" << year << endl;
-    }
-
-    // Month name function (NO string variable)
-    const char* getMonthName() const {
-        static const char* mon[] =
-        {"","Jan","Feb","Mar","Apr","May","Jun",
-              "Jul","Aug","Sep","Oct","Nov","Dec"};
-        return mon[month];
-    }
-
-    // Month name format (DD-MON-YYYY)
-    void display(char) const {
-        cout << "Date (DD-MON-YYYY): ";
-        cout << (day < 10 ? "0" : "") << day << "-"
-             << getMonthName() << "-"
-             << year << endl;
-    }
-
-    // Pre-increment (++d)
-    Date operator++() {
-        day++;
-        normalizeForward();
+    // 🔹 Prefix ++
+    Time operator++() {
+        s++;
+        if(s >= 60) {
+            s = 0;
+            m++;
+        }
+        if(m >= 60) {
+            m = 0;
+            h++;
+        }
+        if(h >= 24)
+            h = 0;
         return *this;
     }
 
-    // Post-increment (d++)
-    Date operator++(int) {
-        Date temp = *this;
-        day++;
-        normalizeForward();
+    // 🔹 Postfix ++
+    Time operator++(int) {
+        Time temp = *this;
+        ++(*this);
         return temp;
     }
 
-    // Pre-decrement (--d)
-    Date operator--() {
-        day--;
-        normalizeBackward();
+    // 🔹 Prefix --
+    Time operator--() {
+        s--;
+        if(s < 0) {
+            s = 59;
+            m--;
+        }
+        if(m < 0) {
+            m = 59;
+            h--;
+        }
+        if(h < 0)
+            h = 23;
         return *this;
     }
 
-    // Post-decrement (d--)
-    Date operator--(int) {
-        Date temp = *this;
-        day--;
-        normalizeBackward();
-        return temp;
-    }
+    // 🔹 Input operator with validation loop
+    friend istream& operator>>(istream& in, Time& t);
+
+    // 🔹 Output operator
+    friend ostream& operator<<(ostream& out, Time& t);
 };
 
-int main() {
-    Date d1, d2;
-    int choice;
+// ✅ Input with proper validation
+istream& operator>>(istream& in, Time& t) {
+    while(true) {
+        cout<<"Enter hours (0-23): ";
+        in>>t.h;
+        cout<<"Enter minutes (0-59): ";
+        in>>t.m;
+        cout<<"Enter seconds (0-59): ";
+        in>>t.s;
 
-    cout << "\nEnter Date\n";
-    d1.getData();
-    d1.display();
-
-    do {
-        cout << "\n--- MENU ---\n";
-        cout << "1. Display numeric format\n";
-        cout << "2. Display month name format\n";
-        cout << "3. Pre increment (++date)\n";
-        cout << "4. Post increment (date++)\n";
-        cout << "5. Pre decrement (--date)\n";
-        cout << "6. Post decrement (date--)\n";
-        cout << "0. Exit\n";
-        cout << "Enter choice: ";
-        cin >> choice;
-
-        switch (choice) {
-            case 1:
-                d1.display(1);
-                break;
-
-            case 2:
-                d1.display('m');
-                break;
-
-            case 3:
-                d2 = ++d1;
-                cout << "After ++date\n";
-                d1.display('m');
-                break;
-
-            case 4:
-                d2 = d1++;
-                cout << "Old Date: ";
-                d2.display('m');
-                cout << "New Date: ";
-                d1.display('m');
-                break;
-
-            case 5:
-                d2 = --d1;
-                d1.display('m');
-                d2.display('m');
-                break;
-
-            case 6:
-                d2 = d1--;
-                cout << "Old Date: ";
-                d2.display('m');
-                cout << "New Date: ";
-                d1.display('m');
-                break;
-
-            case 0:
-                cout << "Exiting...\n";
-                break;
-
-            default:
-                cout << "Invalid choice\n";
+        if(t.h >= 0 && t.h < 24 &&
+           t.m >= 0 && t.m < 60 &&
+           t.s >= 0 && t.s < 60) {
+            break;
         }
+        else {
+            cout<<"\n❌ Invalid time! Please enter again.\n\n";
+        }
+    }
+    return in;
+}
 
-    } while (choice != 0);
+// Output
+ostream& operator<<(ostream& out, Time& t) {
+    out << setw(2) << setfill('0') << t.h << ":"
+        << setw(2) << setfill('0') << t.m << ":"
+        << setw(2) << setfill('0') << t.s;
+    return out;
+}
+
+// 🔹 Main
+int main() {
+    Time t;
+
+    cout<<"--- Time Input ---\n";
+    cin>>t;
+
+    cout<<"\nTime Entered: "<<t<<endl;
+
+    cout<<"\nAfter Postfix Increment (t++): ";
+    t++;
+    cout<<t<<endl;
+
+    cout<<"After Prefix Increment (++t): ";
+    ++t;
+    cout<<t<<endl;
+
+    cout<<"After Prefix Decrement (--t): ";
+    --t;
+    cout<<t<<endl;
 
     return 0;
 }
+/*
+
+*/

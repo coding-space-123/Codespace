@@ -3,18 +3,23 @@
 using namespace std;
 
 int main() {
-    ifstream file("data.txt");   // open in read mode
+    ifstream fin("data.txt");   // open in read mode
     string line;
 
-    if (!file) {
+    if (!fin) {
         cout << "File not found!";
         return 1;
     }
 
-    while (getline(file, line)) {
-        cout << line << endl;
+    // while (getline(fin, line)) {
+    //     cout << line << endl;
+    // }
+    char ch;
+    while (fin.get(ch))
+    {
+        cout<<ch ;
     }
-
-    file.close();
+    cout<<endl;
+    fin.close();
     return 0;
 }
