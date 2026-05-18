@@ -180,5 +180,3 @@ int isfull(stack s)
 
 
 
-
-
