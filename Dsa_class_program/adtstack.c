@@ -137,3 +137,25 @@ int isfull(stack s)
 		return 0;
 		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
