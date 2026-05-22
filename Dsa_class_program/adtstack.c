@@ -134,6 +134,5 @@ int isfull(stack s)
 	if(s.top==size-1)
 		return 1;
 	else 
-		return 0;
-		
+		return 0;		
 }
