@@ -136,5 +136,4 @@ int isfull(stack s)
 	else 
 		return 0;
 		
-
 }
