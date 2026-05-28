@@ -72,4 +72,3 @@ int main()
     mcoloring(1,n);
     return 0;
 }
-
