@@ -76,6 +76,5 @@ int main()
     x[1] = 1;   
     printf("All possible Solutions:\n");
     hamiltonian(2);  
-
     return 0;
 }
