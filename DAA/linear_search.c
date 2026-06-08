@@ -6,7 +6,6 @@ int linear_search(int arr[], int n, int target) {
         }
     }    return 0; // Return -1 if not found
 }
-
 int main()
 {
     int arr[10] ;
