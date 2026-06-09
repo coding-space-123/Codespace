@@ -107,7 +107,6 @@ void bfs(int g[20][20], int nv, int v)
     insertQ(v);
     visited[v] = 1;
     printf("%d ", v);
-
     while (!emptyq())
     {
         v = deleteQ();
