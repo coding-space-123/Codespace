@@ -92,7 +92,6 @@ void insertQ(int x)
     q[++rear] = x;
 }
 
-
 int deleteQ()
 {
     return q[front++];
