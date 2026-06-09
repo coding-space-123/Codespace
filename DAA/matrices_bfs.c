@@ -124,7 +124,6 @@ void bfs(int g[20][20], int nv, int v)
 void bft(int g[20][20], int nv)
 {
     int i;
-
     for (i = 1; i <= nv; i++)
     {
         if (visited[i] == 0)
