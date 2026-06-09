@@ -97,7 +97,6 @@ int deleteQ()
 {
     return q[front++];
 }
-
 int emptyq()
 {
     return (front > rear || front == -1);
