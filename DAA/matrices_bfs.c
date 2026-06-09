@@ -113,8 +113,7 @@ void bfs(int g[20][20], int nv, int v)
 
         for (w = 1; w <= nv; w++)
         {
-            if (g[v][w] == 1 && visited[w] == 0)
-            {
+            if (g[v][w] == 1 && visited[w] == 0){
                 insertQ(w);
                 visited[w] = 1;
                 printf("%d ", w);
