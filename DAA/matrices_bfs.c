@@ -109,10 +109,6 @@ void insertQ(int x)
 
 
 
-
-
-
-
 int deleteQ()
 {
     return q[front++];
