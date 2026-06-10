@@ -165,8 +165,6 @@ void bfs(int g[20][20], int nv, int v)
 
 
 
-
-
 void bft(int g[20][20], int nv)
 {
     int i;
