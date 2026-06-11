@@ -100,6 +100,23 @@ int emptyq()
     return (front > rear || front == -1);
 }
 /* -------- BFS -------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void bfs(int g[20][20], int nv, int v)
 {
     int w;
