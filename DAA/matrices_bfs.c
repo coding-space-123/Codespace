@@ -115,7 +115,6 @@ int emptyq()
 
 
 
-
 void bfs(int g[20][20], int nv, int v)
 {
     int w;
