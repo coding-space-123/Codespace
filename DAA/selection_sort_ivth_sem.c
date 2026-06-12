@@ -13,7 +13,6 @@
 
 
 
-
 void selection_sort(int arr[], int n) {
     int i, j, min_idx;
     for (i = 0; i < n - 1; i++) {
