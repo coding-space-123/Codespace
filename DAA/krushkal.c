@@ -37,7 +37,6 @@
 
 
 
-
 int t[size][3], p[size], c[size];
 void unions(int i, int j);
 int find(int a);
