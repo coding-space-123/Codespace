@@ -209,7 +209,6 @@ int main() {
 
 
 
-                
             case 4:
                 printf("DFT: ");
                 DFT(adj, nv);
