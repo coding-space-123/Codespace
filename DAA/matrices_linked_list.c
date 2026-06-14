@@ -175,7 +175,6 @@ int main() {
                 break;
 
 
-
             case 4:
                 printf("DFT: ");
                 DFT(adj, nv);
