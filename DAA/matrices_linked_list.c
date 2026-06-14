@@ -174,6 +174,42 @@ int main() {
                 DFS(adj, start);
                 break;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
             case 4:
                 printf("DFT: ");
                 DFT(adj, nv);
