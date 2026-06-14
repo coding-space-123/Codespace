@@ -178,7 +178,6 @@ int main() {
                 printf("DFT: ");
                 DFT(adj, nv);
                 break;
-
             case 0:
                 printf("Exit\n");
                 break;
