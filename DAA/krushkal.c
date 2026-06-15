@@ -21,8 +21,6 @@ int main(void)
             cost[i][j] = 999;
         }
     }
-
-
     for(i = 1; i <= e; i++) {
         printf("enter vertices and cost: ");
         scanf("%d%d%d", &v1, &v2, &ct);
