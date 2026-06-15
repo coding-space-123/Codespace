@@ -21,6 +21,41 @@ int main(void)
             cost[i][j] = 999;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
     for(i = 1; i <= e; i++) {
         printf("enter vertices and cost: ");
