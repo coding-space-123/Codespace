@@ -46,8 +46,6 @@ int main(void)
 
 
 
-
-
     for(i = 1; i <= e; i++) {
         printf("enter vertices and cost: ");
         scanf("%d%d%d", &v1, &v2, &ct);
