@@ -37,7 +37,6 @@ int main(void)
     printf("\nmin cost: %d\n", mincost);
     return 0;
 }
-
 void heapify(int arr[size], int n, int i)
 {
     int l, r, min, temp;
