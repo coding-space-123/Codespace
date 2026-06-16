@@ -11,7 +11,6 @@ int kruskal(int cost[size][size], int n, int *e);
 
 
 
-
 int main(void)
 {
     int i, j, n, e, v1, v2, ct, cost[size][size];
