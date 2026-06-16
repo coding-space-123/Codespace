@@ -116,7 +116,6 @@ int kruskal(int cost[size][size], int n, int *e)
             unions(j, k); // Roots ko connect kiya
         }
     }
-
     return mincost;
 }
 // 1 6 10 3 4 12 2 7 14 2 3 16 4 7 18 4 5 22 5 7 24 5 6 25 1 2 28 1 5 30 
