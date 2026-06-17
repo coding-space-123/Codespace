@@ -24,7 +24,6 @@ void selection_sort(int arr[], int n) {
 
 
 
-
 int main() {
     int arr[10];
     int n, i;
