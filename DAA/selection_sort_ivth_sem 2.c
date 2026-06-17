@@ -22,7 +22,6 @@ int main() {
     int n, i;
 
 
-
     printf("Enter number of elements: ");
     scanf("%d", &n);
     printf("Enter elements: ");
