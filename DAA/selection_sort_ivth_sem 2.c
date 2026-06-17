@@ -20,7 +20,6 @@ void selection_sort(int arr[], int n) {
 int main() {
     int arr[10];
     int n, i;
-
     printf("Enter number of elements: ");
     scanf("%d", &n);
     printf("Enter elements: ");
