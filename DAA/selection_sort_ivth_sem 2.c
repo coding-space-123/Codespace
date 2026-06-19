@@ -19,7 +19,6 @@ void selection_sort(int arr[], int n) {
 
 
 
-
         if (min_idx != i) {
             int temp = arr[i];
             arr[i] = arr[min_idx];
