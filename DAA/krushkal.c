@@ -12,7 +12,6 @@ int find(int a);
 
 
 
-
 void min_heap(int arr[size], int n);
 void heapify(int arr[size], int n, int i);
 int delete(int arr[size], int *n);
