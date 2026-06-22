@@ -3,6 +3,40 @@
 void insertion_sort(int arr[], int n) 
 { 
     int i, item, j; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     printf("%d \n",arr[0]);
     for (i = 1; i < n; i++) { 
         item = arr[i]; 
