@@ -6,7 +6,6 @@ void insertion_sort(int arr[], int n)
 
 
 
-
     printf("%d \n",arr[0]);
     for (i = 1; i < n; i++) { 
         item = arr[i]; 
