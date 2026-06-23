@@ -49,7 +49,6 @@ void nextvalue(int k)
 
 
 
-
     do
     {
         x[k] = (x[k] + 1) % (n + 1);
