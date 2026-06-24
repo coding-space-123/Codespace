@@ -8,7 +8,6 @@ void nextvalue(int k)
 {
     int i;
 
-
     do
     {
         x[k] = (x[k] + 1) % (n + 1);
