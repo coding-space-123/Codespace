@@ -26,7 +26,6 @@ void nextvalue(int k)
         }
     } while(1);
 }
-
 void hamiltonian(int k)
 {
     int i;
