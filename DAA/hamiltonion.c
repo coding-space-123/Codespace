@@ -29,7 +29,6 @@ void nextvalue(int k)
 void hamiltonian(int k)
 {
     int i;
-
     do
     {
         nextvalue(k);
