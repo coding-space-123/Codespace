@@ -11,8 +11,6 @@ void nextvalue(int k)
 
 
 
-
-
     
     do
     {
