@@ -12,7 +12,6 @@ void nextvalue(int k)
         x[k] = (x[k] + 1) % (n + 1);
         if(x[k] == 0)
             return;
-
         if(g[x[k-1]][x[k]] != 0)  
         {
             for(i = 1; i < k; i++)
