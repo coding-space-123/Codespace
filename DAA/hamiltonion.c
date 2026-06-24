@@ -32,7 +32,6 @@ void hamiltonian(int k)
     do
     {
         nextvalue(k);
-
         if(x[k] == 0)
             return;
 
