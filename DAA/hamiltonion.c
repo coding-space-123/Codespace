@@ -24,7 +24,6 @@ void nextvalue(int k)
                     return;
             }
         }
-
     } while(1);
 }
 
