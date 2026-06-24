@@ -19,7 +19,6 @@ void nextvalue(int k)
                 if(x[i] == x[k])  
                     break;
             }
-
             if(i == k)   
             {
                 if(k < n || (k == n && g[x[n]][x[1]] != 0))
