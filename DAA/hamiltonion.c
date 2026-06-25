@@ -50,10 +50,6 @@ void hamiltonian(int k)
 
 
 
-
-
-
-
     {
         nextvalue(k);
         if(x[k] == 0)
