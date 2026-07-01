@@ -18,7 +18,6 @@ int binary_search(int arr[], int n, int target) {
 }
 
 
-
 int main()
 {
     int arr[10] ;
