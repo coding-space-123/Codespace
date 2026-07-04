@@ -37,8 +37,6 @@ int main()
 
 
 
-
-
     int d[20][20],l[20][20],n,i,j;
     printf("Enter number of vertices: ");
     scanf("%d",&n);
