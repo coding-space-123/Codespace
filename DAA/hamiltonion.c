@@ -66,3 +66,6 @@ int main()
     hamiltonian(2);  
     return 0;
 }
+
+
+
