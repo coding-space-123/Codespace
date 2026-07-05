@@ -35,6 +35,19 @@ void hamiltonian(int k)
         if(x[k] == 0)
             return;
         if(k == n)
+
+
+
+
+
+
+
+
+
+
+
+
+        
         {
             for(i = 1; i <= n; i++)
                 printf("%d ", x[i]);
