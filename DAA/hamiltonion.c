@@ -43,7 +43,6 @@ void hamiltonian(int k)
 
 
 
-
         {
             for(i = 1; i <= n; i++)
                 printf("%d ", x[i]);
