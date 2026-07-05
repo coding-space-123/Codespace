@@ -59,7 +59,6 @@ int main()
 
     printf("Enter adjacency matrix:\n");
 
-
     for(i=1;i<=n;i++)
         for(j=1;j<=n;j++)
             scanf("%d",&g[i][j]);
