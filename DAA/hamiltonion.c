@@ -53,7 +53,6 @@ void hamiltonian(int k)
 int main()
 {
     int i,j;
-
     printf("Enter number of vertices: ");
     scanf("%d",&n);
     printf("Enter adjacency matrix:\n");
