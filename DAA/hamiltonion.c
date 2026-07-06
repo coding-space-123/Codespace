@@ -60,8 +60,6 @@ int main()
         for(j=1;j<=n;j++)
 
 
-
-
             scanf("%d",&g[i][j]);
     x[1] = 1;   
     printf("All possible Solutions:\n");
