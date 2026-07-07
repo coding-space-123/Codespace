@@ -49,7 +49,6 @@ void hamiltonian(int k)
 
     } while(1);
 }
-
 int main()
 {
     int i,j;
