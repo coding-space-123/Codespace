@@ -54,7 +54,6 @@ void hamiltonian(int k)
 
 
 
-
 int main()
 {
     int i,j;
