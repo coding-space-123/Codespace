@@ -61,7 +61,6 @@ int main()
 
 
 
-
             scanf("%d",&g[i][j]);
     x[1] = 1;   
     printf("All possible Solutions:\n");
