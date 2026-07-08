@@ -14,7 +14,6 @@ int g[20][20];
 
 
 
-
 void nextvalue(int k, int n)
 {
     int i;
