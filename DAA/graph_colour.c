@@ -30,7 +30,6 @@ void mcolouring(int k, int n)
 
 
 
-
             for(int i = 1; i <= n; i++)
                 printf("%d ",x[i]);
             printf("\n");
