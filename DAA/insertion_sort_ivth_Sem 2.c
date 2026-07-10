@@ -17,7 +17,6 @@ void insertion_sort(int arr[], int n)
         printf("\n");
     } 
 }
-
 int main() 
 {
     int arr[10] ;
