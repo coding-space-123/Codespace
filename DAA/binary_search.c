@@ -14,6 +14,25 @@ int binary_search(int arr[], int n, int target) {
         } else {
             high = mid - 1;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     }
     return j; 
