@@ -24,6 +24,7 @@ int main()
     int target;
     printf("Enter number of elements in the array: ");
     scanf("%d", &n);
+    
     printf("Enter %d elements in sorted order:\n", n);
     for(int i=0; i<n; i++) {
         scanf("%d", &arr[i]);
