@@ -1,6 +1,7 @@
 #include<stdio.h>
 int binary_search(int arr[], int n, int target) {
     int low = 0;
+    
     int high = n - 1;
     int j=0;
     while(low <= high && j==0) {
