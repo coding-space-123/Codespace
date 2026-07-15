@@ -47,7 +47,6 @@ int main()
     } while(1);
 return 0;
 }
-
 void selection(int a[30],int n)
 {
     int i,j,min,temp;
