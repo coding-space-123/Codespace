@@ -27,7 +27,6 @@ int main()
         			    printf("%d\n",a[i]);
         			}
                     break;
-            
             case 2: bubble(a,n);
             		printf("after sorting array=\t");
         			for(i=0;i<n;i++)
