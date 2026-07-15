@@ -16,7 +16,6 @@ int main()
         {
             scanf("%d",&a[i]);
         }
-
         printf("enter your choice of searching=");
         scanf("%d",&ch);
         switch(ch)
