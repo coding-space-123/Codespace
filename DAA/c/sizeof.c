@@ -41,8 +41,6 @@ int main()
     printf("size of double array =%u\n",sizeof(d[20]));
 
 
-
-    
     printf("size of long double array =%u\n",sizeof(e[20]));
     printf("size of long long array =%u\n",sizeof(f[20]));
     printf("size of long int array =%u\n",sizeof(g[20]));
