@@ -47,8 +47,6 @@ int main()
 
 
 
-
-
     printf("size of int array =%u\n",sizeof(a[20]));
     printf("size of float array =%u\n",sizeof(b[20]));
     printf("size of char array =%u\n",sizeof(c[20]));
