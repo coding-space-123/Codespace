@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main()
 {
-
     int a[20];
     float b[20];
     char c[20];
