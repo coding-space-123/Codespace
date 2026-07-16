@@ -35,7 +35,6 @@ int main()
     printf("size of long long pointer =%u\n",sizeof(ptr5));
     printf("size of long int pointer =%u\n",sizeof(ptr6));
     printf("size of double long pointer =%u\n",sizeof(ptr7));
-
     printf("size of int array =%u\n",sizeof(a[20]));
     printf("size of float array =%u\n",sizeof(b[20]));
     printf("size of char array =%u\n",sizeof(c[20]));
