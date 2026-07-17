@@ -4,6 +4,18 @@ class day2 {
         System.out.println("values of a and b before swapping\n");
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 
 
