@@ -7,8 +7,6 @@ class day2 {
 
 
 
-
-
 }
 
 
