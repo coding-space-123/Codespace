@@ -36,4 +36,3 @@ class day2 {
 
 
 
-
