@@ -7,5 +7,3 @@ class day2 {
 }
 
 
-
-
