@@ -30,4 +30,3 @@ class day2 {
 
 
 
-
