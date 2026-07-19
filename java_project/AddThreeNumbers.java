@@ -17,7 +17,5 @@ public class AddThreeNumbers {
 
 
 
-
-
     
 // Output: Sum of three numbers: 60
