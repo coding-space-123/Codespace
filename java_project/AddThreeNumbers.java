@@ -12,7 +12,6 @@ public class AddThreeNumbers {
 
 
 
-        
         System.out.println("Sum of three numbers: " + sum);
     }
 }
