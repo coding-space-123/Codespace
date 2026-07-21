@@ -6,6 +6,9 @@ public class AddThreeNumbers {
         int c = 30;
         int sum = a + b + c;
         System.out.println("Sum of three numbers: " + sum);
+ 
+ 
+ 
     }
 }
 // Output: Sum of three numbers: 60
