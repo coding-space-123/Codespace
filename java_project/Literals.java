@@ -16,7 +16,6 @@ public class Literals {
         float floatLiteral = 99.99f;
         System.out.println("Floating-point Literal: " + floatLiteral);
 
-
         // double Literal
         double doubleLiteral = 12345.6789;
         System.out.println("Double Literal: " + doubleLiteral);
