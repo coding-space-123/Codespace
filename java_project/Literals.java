@@ -21,7 +21,6 @@ public class Literals {
         // Character Literal
         char charLiteral = 'A';
         System.out.println("Character Literal: " + charLiteral);
-
         // String Literal
         String stringLiteral = "Hello, Java!";
         System.out.println("String Literal: " + stringLiteral);
