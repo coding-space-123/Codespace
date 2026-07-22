@@ -21,7 +21,6 @@ public class Literals {
 
 
 
-
         // double Literal
         double doubleLiteral = 12345.6789;
         System.out.println("Double Literal: " + doubleLiteral);
