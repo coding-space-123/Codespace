@@ -24,7 +24,6 @@ public class Literals {
         // String Literal
         String stringLiteral = "Hello, Java!";
         System.out.println("String Literal: " + stringLiteral);
-
         // Boolean Literal
         boolean boolLiteral = true;
         System.out.println("Boolean Literal: " + boolLiteral);
