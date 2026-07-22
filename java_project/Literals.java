@@ -36,8 +36,6 @@ public class Literals {
 
 
 
-
-
 }
 
 // In Java, literals are fixed values that are directly represented in the code.
