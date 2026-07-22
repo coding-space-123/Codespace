@@ -29,8 +29,6 @@ public class Literals {
         System.out.println("Boolean Literal: " + boolLiteral);
     }
 
-
-
 }
 
 // In Java, literals are fixed values that are directly represented in the code.
