@@ -52,7 +52,6 @@ public class FrequencyMode {
 
 
 
-
         System.out.println("Mode = " + mode);
         sc.close();
     }
