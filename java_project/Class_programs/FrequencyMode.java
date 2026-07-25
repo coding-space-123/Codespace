@@ -45,7 +45,6 @@ public class FrequencyMode {
                 mode = arr[i];
             }
         }
-
         System.out.println("Mode = " + mode);
         sc.close();
     }
