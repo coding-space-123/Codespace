@@ -42,8 +42,7 @@ public class FrequencyMode {
 
 
 
-            
-
+        
             System.out.println(arr[i] + " -> Frequency = " + count);
 
             if (count == 1)
