@@ -3,7 +3,6 @@ class String6 {
         String s = "  Java Programming  ";
         String s1 = "";
         String s2 = "   ";
-
         System.out.println("Original String : '" + s + "'");
         System.out.println("Uppercase : " + s.toUpperCase());
         System.out.println("Lowercase : " + s.toLowerCase());
