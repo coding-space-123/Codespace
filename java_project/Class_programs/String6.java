@@ -16,5 +16,4 @@ class String6 {
 
         System.out.println("isBlank() on s2 : " + s2.isBlank());
     }
-
 }
