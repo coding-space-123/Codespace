@@ -9,7 +9,6 @@ class String6 {
         System.out.println("Lowercase : " + s.toLowerCase());
         System.out.println("After trim() : '" + s.trim() + "'");
         System.out.println("isEmpty() on s1 : " + s1.isEmpty());
-
         System.out.println("isBlank() on s2 : " + s2.isBlank());
     }
 }
