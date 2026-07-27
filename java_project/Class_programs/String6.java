@@ -7,7 +7,6 @@ class String6 {
         System.out.println("Original String : '" + s + "'");
         System.out.println("Uppercase : " + s.toUpperCase());
         System.out.println("Lowercase : " + s.toLowerCase());
-
         System.out.println("After trim() : '" + s.trim() + "'");
 
         System.out.println("isEmpty() on s1 : " + s1.isEmpty());
