@@ -5,7 +5,6 @@ public class RotateArray {
         Scanner sc = new Scanner(System.in);
 
 
-
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
         int arr[] = new int[n];
