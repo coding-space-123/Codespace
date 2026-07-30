@@ -9,8 +9,6 @@ public class RotateArray {
 
 
 
-
-
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
