@@ -46,7 +46,6 @@ public class datatype {
     System.out.println("enter value :");
     int p = sc.nextInt();
 
-
     System.out.println(p > 3);
     }
 }
