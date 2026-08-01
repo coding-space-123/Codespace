@@ -20,7 +20,6 @@ public class Fibonacci {
 
 
 
-        
         sc.close();
     }
 }
