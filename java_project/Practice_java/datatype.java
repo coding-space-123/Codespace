@@ -41,7 +41,6 @@ public class datatype {
     System.out.println("value = " + ch++);
     System.out.println(6 > xx);
     System.out.println(2 > i);
-
     // set 2 
     Scanner sc = new Scanner (System.in);
     System.out.println("enter value :");
