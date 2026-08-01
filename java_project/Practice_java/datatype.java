@@ -47,8 +47,6 @@ public class datatype {
     int p = sc.nextInt();
 
 
-
-
     System.out.println(p > 3);
     }
 }
