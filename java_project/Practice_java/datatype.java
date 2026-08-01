@@ -49,7 +49,6 @@ public class datatype {
 
 
 
-
     System.out.println(p > 3);
     }
 }
