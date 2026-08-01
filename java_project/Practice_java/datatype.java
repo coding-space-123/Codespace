@@ -45,6 +45,13 @@ public class datatype {
     Scanner sc = new Scanner (System.in);
     System.out.println("enter value :");
     int p = sc.nextInt();
+
+
+
+
+
+
+    
     System.out.println(p > 3);
     }
 }
