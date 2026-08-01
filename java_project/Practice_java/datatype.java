@@ -36,7 +36,6 @@ public class datatype {
     // quiz 
     int xx= 7;
     System.out.println("value = " + ++xx * 8);
-
     char ch = 'a';
     System.out.println("value = " + ++ch);
     System.out.println("value = " + ch++);
